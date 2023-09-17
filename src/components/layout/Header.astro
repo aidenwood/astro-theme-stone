@@ -7,8 +7,8 @@ const links = [
   },
   {
     ref: '02',
-    name: 'About',
-    href: '/about',
+    name: 'Velocity',
+    href: '/velocity',
   },
   {
     ref: '03',
@@ -25,8 +25,8 @@ const links = [
 
 <header
   x-data="{ open: false }"
-  class="transition"
-  :class="{ 'bg-primary-500/10 dark:bg-primary-400/10': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
+  class="transition sticky top-0 z-50 backdrop-blur-lg"
+  :class="{ 'bg-primary-200/90 dark:bg-primary-800/90': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
 >
   <div
     class="mx-auto w-full lg:max-w-7xl flex items-center justify-between px-4 sm:px-6 lg:px-8 py-2 md:py-4 lg:py-6"

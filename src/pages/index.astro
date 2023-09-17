@@ -3,26 +3,30 @@ import About from '../components/home/About.astro';
 import Cta from '../components/home/Cta.astro';
 import Expertise from '../components/home/Integrations.astro';
 import Hero from '../components/home/Hero.astro';
-import Works from '../components/home/Works-Grid.astro';
+import Velocity from '../components/home/Intro-Velocity.astro';
 import Process from '../components/home/Process.astro';
+import VelocityGrid from '../components/home/Grid-Velocity.astro';
+import Clients from '../components/home/Grid-Clients.astro';
 import Components from '../components/home/Components.astro';
 import Testimonials from '../components/home/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  description="Velocity is a premium website theme, making high-performance website design easier. Developed and maintained on the Gold Coast, Australia."
-  title="Velocity · High-performance website theme by Aidxn Design"
+  description="Home · Gold Coast Website Design by Aidxn Design"
 >
   <Hero />
-  <Works />
-  
+  <About />
   <Process />
+  <Clients />
   
+  
+  <Velocity />
   <Components />
+  <VelocityGrid />
   <Expertise />
+
   <Testimonials />
   <Cta />
-  <About />
 
 </Layout>
