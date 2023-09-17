@@ -6,6 +6,7 @@ const pricing = [
     periodicity: '/once',
     price: '$2445',
     action: 'Buy Now',
+    link: 'https://buy.stripe.com/7sIcOleXFgRTbrq4gg',
     features: ['8 Pages', '1 In-person revision', 'Turnaround in 21 days', 'Lifetime access', 'Free updates'],
   },
   {
@@ -15,6 +16,7 @@ const pricing = [
     periodicity: '/once',
     price: '$3445',
     action: 'Buy Now',
+    link: 'https://buy.stripe.com/28o15Dg1JfNPcvufZ6',
     features: ['16 Pages', '2 In-person revisions', 'Turnaround in 21 days', 'Lifetime access', 'Email Support', 'Free updates'],
   },
   {
@@ -23,6 +25,7 @@ const pricing = [
     periodicity: '',
     price: '$4445',
     action: 'Buy Now',
+    link: 'https://buy.stripe.com/7sIaGd7vdgRT9jidRa',
     features: [
       '32 Pages & Products',
       '4 In-person revisions',
@@ -76,7 +79,7 @@ const pricing = [
               </ul>
             </div>
             <a
-              href="#"
+              href={item.link}
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Buy now
