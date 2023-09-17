@@ -1,11 +1,17 @@
 ---
 import About from '../components/home/About.astro';
 import Cta from '../components/home/Cta.astro';
-import Expertise from '../components/home/Integrations.astro';
+import Integrations from '../components/home/Integrations.astro';
 import Hero from '../components/home/Hero.astro';
-import Velocity from '../components/home/Intro-Velocity.astro';
+import VelocityIntro from '../components/home/Intro-Velocity.astro';
 import Process from '../components/home/Process.astro';
 import VelocityGrid from '../components/home/Grid-Velocity.astro';
+import VelocitySlide from '../components/home/SliderSml-Velocity.astro';
+import MoonSlide from '../components/home/SliderSml-Moonshot.astro';
+import MoonIntro from '../components/home/Intro-Moonshot.astro';
+
+
+
 import Clients from '../components/home/Grid-Clients.astro';
 import Components from '../components/home/Components.astro';
 import Testimonials from '../components/home/Testimonials.astro';
@@ -17,15 +23,17 @@ import Layout from '../layouts/Layout.astro';
 >
   <Hero />
   <About />
+
+  <VelocityIntro />
+  <VelocitySlide />
+
   <Process />
+
+  <MoonIntro />
+  <MoonSlide />
+
   <Clients />
   
-  
-  <Velocity />
-  <Components />
-  <VelocityGrid />
-  <Expertise />
-
   <Testimonials />
   <Cta />
 

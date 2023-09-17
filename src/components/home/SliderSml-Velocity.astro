@@ -1,0 +1,106 @@
+
+<!-- SVG CSS and Animate for Aidxn Moving Logo -->
+<style>
+  .carousel-cell {
+  width: 45%;
+  height: 420px;
+  margin-right: 15px;
+}
+.carousel-cell.size-sqr { width: 340px; }
+@media screen and ( max-width: 960px ) {
+  .carousel-cell.size-sqr {
+    width: 41%;
+  }
+}
+.carousel-cell img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+* { box-sizing: border-box; }
+
+/* brighten selected image */
+.carousel-cell.is-selected img {
+  opacity: 1;
+}
+
+@media screen and ( max-width: 768px ) {
+  .carousel-cell {
+    height: 320px;
+  }
+}
+
+@media screen and ( max-width: 960px ) {
+  .carousel-cell {
+    width: 66%;
+  }
+}
+  /* position dots up a bit */
+  .flickity-page-dots {
+    bottom: -22px !important;
+  }
+  /* dots are lines */
+  .flickity-page-dots .dot {
+    height: 4px !important;
+    width: 40px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .flickity-viewport {
+    transition: 0.2s;
+  }
+</style>
+
+<section class="py-8">
+  <div class="mx-auto px-4 sm:px-6 w-full lg:max-w-7xl lg:px-8">
+    
+      <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true, "adaptiveHeight": true, "pageDots": false, "prevNextButtons": false }'>
+        <div class="carousel-cell">
+          <img
+            class="h-auto w-full rounded-3xl"
+            width="1280"
+            height="640"
+            src="/works/hero-tsd.webp"
+            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
+          />
+        </div>
+        <div class="carousel-cell size-sqr bg-contain">
+          <img
+            class="h-auto w-full rounded-3xl"
+            width="1280"
+            height="640"
+            src="/works/velocity-tsd.webp"
+            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
+          />
+        </div>
+        <div class="carousel-cell bg-cover">
+          <img
+            class="h-auto w-full rounded-3xl"
+            width="1280"
+            height="640"
+            src="/works/hero-estem.webp"
+            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="h-auto w-full rounded-3xl"
+            width="1280"
+            height="640"
+            src="/works/hero-snacks.webp"
+            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
+          />
+        </div>
+        
+      </div>
+    
+  </div>
+</section>
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
