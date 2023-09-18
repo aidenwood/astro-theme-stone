@@ -1,59 +1,14 @@
 
-<!-- SVG CSS and Animate for Aidxn Moving Logo -->
+<!-- Velocity8 Slider Settings -->
 <style>
-  .carousel-cell {
-  width: 45%;
+
+.carousel-cell {
   margin-right: 15px;
+  width: 45%;
 }
 
-@media screen and ( max-width: 960px ) {
-  .carousel-cell {
-    width: 66%;
-  }
-}
+.carousel-cell.size-sqr { width: 28%; }
 
-.carousel-cell.size-sqr { width: 340px; }
-@media screen and ( max-width: 960px ) {
-  .carousel-cell.size-sqr {
-    width: 41%;
-  }
-}
-
-.carousel-cell-image {
-  display: block;
-  max-height: 100%;
-  margin: 0 auto;
-  max-width: 100%;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
-}
-
-/* fade in lazy loaded image */
-.carousel-cell-image.flickity-lazyloaded,
-.carousel-cell-image.flickity-lazyerror {
-  opacity: 1;
-}
-
-
-* { box-sizing: border-box; }
-
-/* brighten selected image */
-.carousel-cell.is-selected img {
-  opacity: 1;
-}
-
-  /* position dots up a bit */
-  .flickity-page-dots {
-    bottom: -22px !important;
-  }
-  /* dots are lines */
-  .flickity-page-dots .dot {
-    height: 4px !important;
-    width: 40px !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-  }
 
   .flickity-viewport {
     transition: 0.2s;
@@ -63,7 +18,7 @@
 <section class="py-8">
   <div class="mx-auto px-4 sm:px-6 w-full lg:max-w-7xl lg:px-8">
     
-      <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true, "adaptiveHeight": true, "pageDots": false, "prevNextButtons": false, "lazyLoad": true }'>
+      <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true, "pageDots": false, "prevNextButtons": false, "lazyLoad": true, "imagesLoaded": true }'>
         <div class="carousel-cell">
           <img
             class="h-auto w-full rounded-3xl"

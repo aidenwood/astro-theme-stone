@@ -1,23 +1,17 @@
 
 <!-- SVG CSS and Animate for Aidxn Moving Logo -->
+<!-- Velocity8 Large Slider Settings -->
 <style>
   svg{width:100%;height:100%;perspective:50px}circle{stroke:#26003A;stroke-width:8px;fill:none}.equator{stroke:#a600ff;transform:rotateZ(-20deg) rotateX(125deg)}.meridian{animation:2s linear infinite turn;transform:rotateZ(-20deg) rotateX(35deg) rotateY(var(--start))}@keyframes turn{100%{transform:rotateZ(-20deg) rotateX(35deg) rotateY(var(--end))}}
-  .carousel-cell {
-  max-width: 66%;
-  margin-right: 15px;
-}
+  
 
-.carousel-cell img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-@media screen and ( max-width: 960px ) {
   .carousel-cell {
-    max-width: 90%;
+    margin-right: 15px;
+    width: 55%;
   }
-}
-* { box-sizing: border-box; }
+  
+  .carousel-cell.size-sqr { width: 40.5%; }
+  .carousel-cell.size-wide { width: 61%; }
 
 
   .flickity-viewport {
@@ -74,11 +68,29 @@
       </div>
 
 
-      <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true }'>
+      <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true, "pageDots": false, "prevNextButtons": false, "lazyLoad": true, "imagesLoaded": true }'>
         
-        <div class="carousel-cell bg-cover">
+        <div class="carousel-cell size-wide">
           <img
-            class="h-auto w-full rounded-3xl"
+            class="rounded-3xl"
+            width="980"
+            height="980"
+            src="/works/billboard-design.webp"
+            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
+          />
+        </div>
+        <div class="carousel-cell size-sqr">
+          <img
+            class="rounded-3xl"
+            width="980"
+            height="980"
+            src="/works/velocity-tsd.webp"
+            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
+          />
+        </div>
+        <div class="carousel-cell">
+          <img
+            class="rounded-3xl"
             width="1280"
             height="640"
             src="/works/gwd-interactive-ads.webp"
@@ -87,28 +99,19 @@
         </div>
         <div class="carousel-cell">
           <img
-            class="h-auto w-full rounded-3xl"
+            class="rounded-3xl"
             width="1280"
             height="640"
             src="/works/app-design.webp"
             alt="Gold Coast web design with Aidxn Design - best results guarenteed"
           />
         </div>
-        <div class="carousel-cell bg-contain">
+        <div class="carousel-cell">
           <img
-            class="h-auto w-full rounded-3xl"
+            class="rounded-3xl"
             width="1280"
             height="640"
             src="/works/web-design.webp"
-            alt="Gold Coast web design with Aidxn Design - best results guarenteed"
-          />
-        </div>
-        <div class="carousel-cell">
-          <img
-            class="h-auto w-full rounded-3xl"
-            width="1280"
-            height="640"
-            src="/works/billboard-design.webp"
             alt="Gold Coast web design with Aidxn Design - best results guarenteed"
           />
         </div>
