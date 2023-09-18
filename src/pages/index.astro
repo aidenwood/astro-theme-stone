@@ -14,30 +14,36 @@ import MoonInfo from '../components/home/Info-Moonshot.astro';
 
 
 import Clients from '../components/home/Grid-Clients.astro';
-import Components from '../components/home/Components.astro';
+import VelocityFAQ from '../components/home/Faq-Velocity.astro';
 import Testimonials from '../components/home/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
+import SectionEnd from '../components/home/Section-End.astro';
+
 ---
 
 <Layout
   description="Home · Gold Coast Website Design by Aidxn Design"
 >
   <Hero />
-  <About />
+  <Process />
+  <Clients />
+  <SectionEnd />
 
   <VelocityIntro />
   <VelocitySlide />
   <VelocityInfo />
-
-  <Process />
+  <VelocityFAQ />
+  <SectionEnd />
 
   <MoonIntro />
   <MoonSlide />
   <MoonInfo />
+  <Testimonials />  
+  <SectionEnd />
 
-  <Clients />
-  
-  <Testimonials />
   <Cta />
+  <SectionEnd />
 
+  <About />
+ 
 </Layout>
