@@ -1,22 +1,25 @@
 <!-- Velocity8 Slider Settings -->
 <style>
 
+.carousel-cell {
+  margin-right: 15px;
+  width: calc(50% - 7.5px);
+}
+@media only screen and (max-width: 1199px) {
   .carousel-cell {
-    margin-right: 15px;
-    width: 80%;
+    width: 65%;
   }
-  @media only screen and (max-width: 768px) {
-      .carousel-cell {
-        width: 100%;
-      }
-    }
-  
-  .carousel-cell.size-sqr { width: 28%; }
-  
-  
-    .flickity-viewport {
-      transition: 0.2s;
-    }
+}
+@media only screen and (max-width: 768px) {
+  .carousel-cell {
+    width: 85%;
+  }
+}
+
+.flickity-viewport {
+  transition: 0.2s;
+}
+
   </style>
 
 <section class="py-8">
@@ -25,17 +28,17 @@
       <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true, "pageDots": false, "prevNextButtons": false, "lazyLoad": true, "imagesLoaded": true, "autoPlay": 1800 }'>
         
         <div 
-          class="carousel-cell size-vertical rounded-3xl bg-cover h-full" 
+          class="carousel-cell rounded-3xl bg-cover h-full" 
           style="background-image: url(/works/br-bus.webp); background-position: center;">
         </div>
 
         <div 
-          class="carousel-cell size-vertical rounded-3xl bg-cover h-full" 
+          class="carousel-cell rounded-3xl bg-cover h-full" 
           style="background-image: url(/works/br-bill.webp); background-position: center;">
         </div>
 
         <div 
-          class="carousel-cell size-vertical rounded-3xl bg-cover h-full" 
+          class="carousel-cell rounded-3xl bg-cover h-full" 
           style="background-image: url(/works/br-re.webp); background-position: center;">
         </div>
 

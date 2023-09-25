@@ -1,10 +1,11 @@
 ---
 import About from '../components/velocity/About.astro';
-import Cta from '../components/velocity/Cta.astro';
+import Cta from '../components/home/Cta.astro';
 import Expertise from '../components/velocity/Integrations.astro';
 import Hero from '../components/velocity/Hero.astro';
 import Intro from '../components/velocity/Intro-Velocity.astro';
-import Process from '../components/velocity/Process.astro';
+import IntroSec from '../components/velocity/Intro-Velocity-Sec.astro';
+import Process from '../components/home/Process.astro';
 import Clients from '../components/velocity/Grid-Clients.astro';
 import Components from '../components/velocity/Components.astro';
 import Testimonials from '../components/velocity/Testimonials.astro';
@@ -17,15 +18,15 @@ import Layout from '../layouts/Layout.astro';
 >
   <Hero />
   
-  
-  <Components />
   <Intro />
-  <Expertise />
-  <About />
+  <Expertise />  
   <Clients />
+  <IntroSec />
+  <Components />
+
+
   <Testimonials />
   <Cta />
   
-  <Process />
 
 </Layout>

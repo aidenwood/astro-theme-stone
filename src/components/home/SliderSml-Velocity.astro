@@ -4,20 +4,22 @@
 
 .carousel-cell {
   margin-right: 15px;
-  width: 80%;
+  width: calc(50% - 7.5px);
+}
+@media only screen and (max-width: 1199px) {
+  .carousel-cell {
+    width: 65%;
+  }
 }
 @media only screen and (max-width: 768px) {
-    .carousel-cell {
-      width: 100%;
-    }
+  .carousel-cell {
+    width: 85%;
   }
+}
+.flickity-viewport {
+  transition: 0.2s;
+}
 
-.carousel-cell.size-sqr { width: 28%; }
-
-
-  .flickity-viewport {
-    transition: 0.2s;
-  }
 </style>
 
 <section class="py-8">
