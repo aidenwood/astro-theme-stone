@@ -38,7 +38,7 @@ const services = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto px-4 sm:px-6 w-full lg:max-w-7xl lg:px-8">
     <div class="">
-      <h3 class="text-3xl font-medium tracking-tight sm:text-4xl mb-6">Our Design Process</h3>
+      <h4 class="text-3xl sm:text-4xl font-medium tracking-tight mb-6">Our Design Process</h4>
       <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
         {
           services.map((service) => (
@@ -46,7 +46,7 @@ const services = [
               
               <div class="flex flex-col md:flex-row gap-4">
                 <img
-                  class="h-auto w-16 md:w-28 rounded-3xl"
+                  class="h-auto w-16 md:w-24 rounded-3xl"
                   width="640"
                   height="640"
                   src={service.img}
@@ -54,8 +54,8 @@ const services = [
                 />
                 <div class="flex flex-col gap-4">
                   <p class="text-sm">{service.step}</p>
-                  <h4 class="text-xl font-medium">{service.name}</h4>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-sm md:text-md">
+                  <h3 class="text-xl font-medium">{service.name}</h3>
+                  <p class="text-primary-950/70 dark:text-primary-200/70 text-sm md:text-md leading-6">
                     {service.description}
                   </p>
                 </div>
