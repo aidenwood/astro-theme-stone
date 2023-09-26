@@ -16,6 +16,9 @@ module.exports = {
       sans: ['Inter', 'sans-serif'],
     },
     screens: {
+      'xs': '412px',
+      // => @media (min-width: 412px) { ... }
+      
       'sm': '512px',
       // => @media (min-width: 512px) { ... }
 
