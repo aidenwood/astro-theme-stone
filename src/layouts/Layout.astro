@@ -5,6 +5,7 @@ import { ViewTransitions } from 'astro:transitions';
 import Footer from '../components/layout/Footer.astro';
 import Header from '../components/layout/Header.astro';
 
+
 interface Props {
   description: string;
   title: string;
@@ -25,13 +26,15 @@ const { description, title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
+
+
     <ViewTransitions />
   </head>
-  <body
-    class="bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-200 antialiased transition"
+  <body 
+    class="bg-primary-100 text-primary-950 dark:bg-primary-900 dark:text-primary-200 antialiased transition" 
   >
     <Header />
-    <main>
+    <main >
       <slot />
     </main>
     <Footer />

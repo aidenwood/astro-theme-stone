@@ -7,8 +7,8 @@ const links = [
   },
   {
     ref: '02',
-    name: 'About',
-    href: '/about',
+    name: 'Velocity',
+    href: '/velocity',
   },
   {
     ref: '03',
@@ -25,11 +25,11 @@ const links = [
 
 <header
   x-data="{ open: false }"
-  class="transition"
-  :class="{ 'bg-primary-500/10 dark:bg-primary-400/10': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
+  class="transition sticky top-0 z-50 backdrop-blur-xl shadow-sm"
+  :class="{ 'bg-primary-300/90 dark:bg-primary-700/90': open, 'bg-primary-50/50 dark:bg-primary-800/50': !(open) }"
 >
   <div
-    class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8"
+    class="mx-auto w-full lg:max-w-7xl flex items-center justify-between px-4 sm:px-6 lg:px-8 py-2 md:py-4 lg:py-6"
   >
     <!-- Brand logo -->
     <div class="flex">
@@ -37,13 +37,13 @@ const links = [
         href="/"
         class="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline focus-visible:outline-2"
       >
-        <span class="sr-only">Stone</span>
+        <span class="sr-only">Velocity</span>
         <img
           class="h-8 w-auto"
           width="65"
           height="40"
           :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Stone"
+          alt="Velocity Theme by Aidxn Design"
         />
       </a>
     </div>
@@ -141,8 +141,7 @@ const links = [
         <p
           class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl italic leading-loose"
         >
-          <span class="font-medium">Stone</span> is a premium Astro theme specially designed for
-          Business, Marketing, SaaS and Startup websites.
+          <span class="font-medium">Velocity</span> is a high-performance website theme, customised to a range of industries from Business, Marketing and Startup businesses.
         </p>
       </div>
 

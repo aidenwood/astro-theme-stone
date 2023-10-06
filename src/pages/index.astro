@@ -1,21 +1,49 @@
 ---
 import About from '../components/home/About.astro';
 import Cta from '../components/home/Cta.astro';
-import Expertise from '../components/home/Expertise.astro';
+import Integrations from '../components/home/Integrations.astro';
 import Hero from '../components/home/Hero.astro';
-import Services from '../components/home/Services.astro';
+import VelocityIntro from '../components/home/Intro-Velocity.astro';
+import Process from '../components/home/Process.astro';
+import VelocityInfo from '../components/home/Info-Velocity.astro';
+import VelocitySec from '../components/home/Info-Velocity-Sec.astro';
+import MoonSec from '../components/home/Info-Moonshot-Sec.astro';
+import MoonIntro from '../components/home/Intro-Moonshot.astro';
+import MoonInfo from '../components/home/Info-Moonshot.astro';
+
+
+
+import Clients from '../components/home/Grid-Clients.astro';
+import VelocityFAQ from '../components/home/Faq-Velocity.astro';
 import Testimonials from '../components/home/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
+import SectionEnd from '../components/home/Section-End.astro';
+
 ---
 
 <Layout
-  description="Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and Startup websites."
-  title="Stone · Premium Astro template"
+  description="Home · Gold Coast Website Design by Aidxn Design"
 >
   <Hero />
-  <Services />
-  <Expertise />
+  <Process />
+  <SectionEnd />
+
+  <VelocityIntro />
+  <VelocitySec />
+  <VelocityFAQ />
+  <VelocityInfo />
+  <SectionEnd />
+
+  <Clients />
+  <SectionEnd />
+
+  <MoonIntro />
+  <MoonSec />
+  <Testimonials />  
+  <MoonInfo />
+  <SectionEnd />
+
   <About />
-  <Testimonials />
   <Cta />
+
 </Layout>

@@ -1,12 +1,15 @@
-# Stone: Astro Theme
+# Velocity 8: Conversion Focused Website Theme
 
-Stone is a free and open-source Astro theme specially designed for Business, Marketing, SaaS and Startup websites.
+Velocity is a website theme specially designed for Service-based, Marketing, SaaS and Startup websites.
+Designed to make it easier for you to have a high-performance website, earlier in your business' lifecycle. 
+Designed and developed on the Gold Coast by Aidxn Design since 2018.
 
 ## Key Features:
 
 - **Built with Tailwind CSS & Alpine.js**
-- **5+ Pages**
-- **15+ Sections**
+- **24+ Pages**
+- **80+ Comnponents**
+- **30+ Integrations**
 - Clean & Modern Design
 - Fully Responsive
 - Dark & Light Mode
@@ -94,3 +97,4 @@ If you have any questions or suggestions do not hesitate to contact me.
 ## License
 
 This project is licensed under the terms of the MIT license.
+# velocity8.5

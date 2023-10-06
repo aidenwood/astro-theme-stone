@@ -1,34 +1,67 @@
 ---
 const pricing = [
   {
-    name: 'Basic',
+    name: 'Small',
     description: 'For development, staging, and small production projects.',
-    periodicity: '/month',
-    price: '$10',
+    periodicity: '/once',
+    price: '$2445',
     action: 'Buy Now',
-    features: ['5 Seats', '1,000 Projects', 'Lifetime access', 'Community Support'],
+    link: 'https://buy.stripe.com/9AQ4hPbLt457532fZ5',
+    features: [
+      '8 Pages', 
+      '1 In-person revision', 
+      '4,000 words of content min.', 
+      'CMS Integration',
+      'Keyword & Competitor Research',
+      'Stripe Checkouts',
+      'Turnaround in 21 days', 
+      '1 Year Domain Included',
+      'Lifetime access', 
+      'Free updates'
+    ],
   },
   {
-    name: 'Pro',
+    name: 'Medium',
     description: 'For high-scale and mission critical projects.',
     isFlagged: true,
-    periodicity: '/month',
-    price: '$25',
+    periodicity: '/once',
+    price: '$3445',
     action: 'Buy Now',
-    features: ['10 Seats', '10,000 Projects', 'Lifetime access', 'Email Support', 'Free updates'],
+    link: 'https://buy.stripe.com/cN2aGd6r9eJL0MMaEZ',
+    features: [
+      '16 Pages', 
+      '2 In-person revisions', 
+      '6,000 words of content min.', 
+      'CMS Integration',
+      'Keyword & Competitor Research',
+      'Stripe Checkouts',
+      'Turnaround in 21 days', 
+      '1 Year Domain Included',
+      'Lifetime access', 
+      'Email Support', 
+      'Free updates'
+    ],
   },
   {
-    name: 'Team',
+    name: 'Large',
     description: 'For teams with more security, support, and performance needs.',
     periodicity: '',
-    price: 'Custom',
+    price: '$4445',
     action: 'Buy Now',
+    link: 'https://buy.stripe.com/7sIaGd7vdgRT9jidRa',
     features: [
-      'Unlimited Seats',
-      'Unlimited Projects',
+      '32 Pages & Products',
+      '4 In-person revisions',
+      '8,000 words of content min.',
+      'CMS Integration',
+      'Keyword & Competitor Research',
+      'Custom E-Commerce Extension',
+      'Stripe Checkouts',
+      'ApplePay & GPay',
+      'Turnaround in 45 days',
+      '1 Year Domain Included',
       'Lifetime access',
-      'Email and Chat Support',
-      'High-Performance',
+      'Email Support',
       'Free updates',
     ],
   },
@@ -74,7 +107,7 @@ const pricing = [
               </ul>
             </div>
             <a
-              href="#"
+              href={item.link}
               class="bg-primary-600 dark:bg-primary-400 hover:bg-primary-700 dark:hover:bg-primary-300 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 dark:text-primary-950 inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium text-white transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               Buy now
