@@ -3,7 +3,12 @@ import About from '../components/home/About.astro';
 import Cta from '../components/home/Cta.astro';
 import Integrations from '../components/home/Integrations.astro';
 import Hero from '../components/home/Hero.astro';
+import HeroSliddy from '../components/home/Hero-Sliddy.astro';
+
 import VelocityIntro from '../components/home/Intro-Velocity.astro';
+import VelocityGrid from '../components/home/Grid-Velocity.astro';
+import MoonGrid from '../components/home/Grid-Moonshot.astro';
+
 import Process from '../components/home/Process.astro';
 import VelocityInfo from '../components/home/Info-Velocity.astro';
 import VelocitySec from '../components/home/Info-Velocity-Sec.astro';
@@ -23,27 +28,26 @@ import SectionEnd from '../components/home/Section-End.astro';
 
 <Layout
   description="Home · Gold Coast Website Design by Aidxn Design"
+  title="Home · Snacks for your Eyes"
+
 >
   <Hero />
+  <HeroSliddy />
   <Process />
   <SectionEnd />
 
   <VelocityIntro />
   <VelocitySec />
-  <VelocityFAQ />
-  <VelocityInfo />
-  <SectionEnd />
-
-  <Clients />
+  <VelocityGrid />
   <SectionEnd />
 
   <MoonIntro />
-  <MoonSec />
-  <Testimonials />  
-  <MoonInfo />
+  <MoonGrid />
   <SectionEnd />
 
   <About />
+  <VelocityFAQ />
   <Cta />
+  
 
 </Layout>
