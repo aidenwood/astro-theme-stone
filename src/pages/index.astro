@@ -6,10 +6,13 @@ import Hero from '../components/home/Hero.astro';
 import HeroSliddy from '../components/home/Hero-Sliddy.astro';
 
 import EventsIntro from '../components/home/Intro-Events.astro';
-import VelocityGrid from '../components/home/Grid-Events.astro';
+import EventsGrid from '../components/home/Grid-Events.astro';
 
-import MoonIntro from '../components/home/Intro-Commercial.astro';
-import MoonGrid from '../components/home/Grid-Commercial.astro';
+import CommercialIntro from '../components/home/Intro-Commercial.astro';
+import CommercialGrid from '../components/home/Grid-Commercial.astro';
+
+import WeddingsIntro from '../components/home/Intro-Weddings.astro';
+import WeddingsGrid from '../components/home/Grid-Weddings.astro';
 
 import Process from '../components/home/Process.astro';
 import VelocityInfo from '../components/home/Info-Velocity.astro';
@@ -37,13 +40,15 @@ import SectionEnd from '../components/home/Section-End.astro';
   <Process />
   <SectionEnd />
 
+  <WeddingsIntro />
+  <WeddingsGrid />
+
   <EventsIntro />
-  <VelocitySec />
-  <VelocityGrid />
+  <EventsGrid />
   <SectionEnd />
 
-  <MoonIntro />
-  <MoonGrid />
+  <CommercialIntro />
+  <CommercialGrid />
   <SectionEnd />
 
   <About />
