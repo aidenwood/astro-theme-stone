@@ -2,21 +2,26 @@
 const links = [
   {
     ref: '01',
-    name: 'Home',
-    href: '/',
+    name: 'Events',
+    href: '/events-photography',
   },
   {
     ref: '02',
-    name: 'Velocity',
-    href: '/velocity',
+    name: 'Weddings',
+    href: '/wedding-photography',
   },
   {
     ref: '03',
-    name: 'Pricing',
-    href: '/pricing',
+    name: 'Products',
+    href: '/product-photography',
   },
   {
     ref: '04',
+    name: 'Portraits',
+    href: '/portrait-photography',
+  },
+  {
+    ref: '05',
     name: 'Contact',
     href: '/contact',
   },
@@ -37,13 +42,13 @@ const links = [
         href="/"
         class="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline focus-visible:outline-2"
       >
-        <span class="sr-only">Velocity</span>
+        <span class="sr-only">Snacks for your Eyes</span>
         <img
           class="h-8 w-auto"
           width="65"
           height="40"
-          :src="$store.theme.isDark ? '/assets/snacks-logo-white.svg' : '/assets/snacks-logo.svg'"
-          alt="Velocity Theme by Aidxn Design"
+          :src="$store.theme.isDark ? '/snacks/snacks-logo-white.svg' : '/snacks/snacks-logo.svg'"
+          alt="Snacks for your Eyes Logo"
         />
       </a>
     </div>
