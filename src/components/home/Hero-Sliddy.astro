@@ -5,28 +5,40 @@
 
   .carousel-cell {
     margin-right: 32px;
-    width: calc(20% - 16px);
-    max-height: 50vh;
+    width: calc(33% - 16px);
+    max-height: 70vh;
+    filter: drop-shadow(0 1px 6px #00000015);
   }
-  @media only screen and (max-width: 1199px) {
-    .carousel-cell {
-      width: calc(33% - 16px);
-    }
-  }
-  @media only screen and (max-width: 968px) {
+  @media only screen and (max-width: 1980px) {
     .carousel-cell {
       width: calc(45% - 16px);
     }
   }
+  @media only screen and (max-width: 1440px) {
+    .carousel-cell {
+      width: calc(65% - 16px);
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .carousel-cell {
+      width: 75%;
+    }
+  }
   @media only screen and (max-width: 768px) {
     .carousel-cell {
-      width: 65%;
+      width: 85%;
+    }
+  }
+  @media only screen and (max-width: 568px) {
+    .carousel-cell {
+      width: 100%;
     }
   }
   
   .flickity-viewport {
     transition: 0.2s;
   }
+
 </style>
 
 
@@ -41,7 +53,7 @@
 
 
 
-      <div class="carousel" data-flickity='{ "contain": true, "freeScroll": true,  "prevNextButtons": false, "imagesLoaded": true, "autoPlay": 1800, "groupCells": "80%", "pauseAutoPlayOnHover": false }'>
+      <div class="carousel" data-flickity='{ "contain": true,  "prevNextButtons": false, "imagesLoaded": true, "autoPlay": 2400, "groupCells": "80%"}'>
         
         <div 
           class="carousel-cell rounded-3xl bg-cover h-full"

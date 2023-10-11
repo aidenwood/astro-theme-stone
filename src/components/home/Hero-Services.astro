@@ -39,14 +39,14 @@ const services = [
   <div class="mx-auto px-4 sm:px-6 w-full lg:max-w-7xl lg:px-8">
     <div class="">
       <h4 class="text-xl sm:text-2xl font-medium tracking-tight mb-6">Photographing a range of visual snacks.</h4>
-      <div class="grid gap-4 grid-cols-1 sm:grid-cols-2">
+      <div class="grid gap-2 sm:gap-4 grid-cols-2">
         {
           services.map((service) => (
-            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col rounded-3xl px-6 py-8">
+            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col rounded-3xl px-4 md:px-6 py-8">
               
-              <div class="flex flex-col lg:flex-row gap-4">
+              <div class="flex flex-col lg:flex-row gap-8">
                 <img
-                  class="h-auto w-1/3 sm:w-16 md:w-18 lg:w-28 rounded-3xl"
+                  class="h-auto w-12 sm:w-16 md:w-18 lg:w-28 rounded-3xl"
                   width="640"
                   height="640"
                   src={service.img}
@@ -54,8 +54,8 @@ const services = [
                 />
                 <div class="flex flex-col gap-4">
                   <p class="text-sm">{service.step}</p>
-                  <h3 class="text-2xl sm:text-lg lg:text-xl font-medium">{service.name}</h3>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base leading-6">
+                  <h3 class="text-md md:text-lg lg:text-xl xl:text-3xl font-medium">{service.name}</h3>
+                  <p class="text-primary-950/70 dark:text-primary-200/70 text-xs sm:text-sm md:text-base leading-6">
                     {service.description}
                   </p>
                 </div>
